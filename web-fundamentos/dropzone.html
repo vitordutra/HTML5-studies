@@ -13,19 +13,45 @@
         }
 
         .drop {
-            width: 500px;
-            height: 500px;
+            width: 200px;
+            height: 200px;
             border: burlywood 1px solid;
         }
     </style>
 </head>
 
 <body>
-    <div class="caixa" draggable="true"></div>
     <!--Dropzone: Área para onde o elemento draggable vai "cair"-->
     <!-- Atalho para fazer div com classes: .classe + Enter. Ex: .drop + Enter-->
     <!-- No momento não funciona. Fazer a funcionalidade em javascript -->
+
+    <div id="c1" class="caixa" draggable="true"></div>
+    <div id="c2" class="caixa" draggable="true"></div>
+
     <div class="drop" dropzone="copy"></div>
+
+    <script>
+        const caixas = document.querySelectorAll(".caixa");
+        // Entre colchetes no queryselector: seleção por atributo.
+        const dropZone = document.querySelector("[dropzone]");
+
+        // Adiciona um evento para cada uma das caixas.
+        caixas.forEach(caixaEl => {
+            caixaEl.addEventListener("dragstart", e => {
+                e.dataTransfer.setData("Text", e.target.id);
+                console.log(e.target.id);
+            });
+
+            // Sobrescrevendo comportamento padrão de drag do navegador
+            dropZone.addEventListener('dragover', e => {
+                e.preventDefault();
+            })
+
+            dropZone.addEventListener('drop', e => {
+                console.log("drop!!!");
+            });
+        });
+    </script>
 </body>
 
 </html>
