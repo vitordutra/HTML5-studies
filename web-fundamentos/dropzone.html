@@ -48,7 +48,7 @@
             })
 
             dropZone.addEventListener('drop', e => {
-                console.log("drop!!!");
+                console.log(e.dataTransfer.getData('Text'));
             });
         });
     </script>
