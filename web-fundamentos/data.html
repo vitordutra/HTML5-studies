@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <!-- atributos data-* (data-qualquer-coisa)-->
+        <!-- Guardam informações invisíveis ao usuário -->
+        <!-- Pode ser usada pra interação com Banco de dados, etc.-->
+        <li data-id="1" data-email="joaohcrangel@gmail.com">
+            João Rangel
+        </li>
+        <li data-id="2" data-email="glaucio@hcode.com.br">
+            Glaucio Daniel
+        </li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liEl => {
+            console.log(liEl.dataset);
+        })
+    </script>
+</body>
+
+</html>
