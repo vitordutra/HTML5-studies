@@ -1,1 +1,1 @@
-alert('C');
+console.log(document.querySelector('h1'));
