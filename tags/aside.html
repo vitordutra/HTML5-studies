@@ -4,24 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tag section</title>
+    <title>tag aside</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header,
+        footer {
+            height: 10vh;
+            background-color: #CCC;
+        }
+
+        main {
+            height: 80vh;
+            background-color: #999;
+            flex: 1;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        aside {
+            height: 80vh;
+            background-color: gold;
+            width: 10vw;
+        }
+    </style>
 </head>
 
 <body>
     <header></header>
-    <main></main>
-    <!--Aside: do lado da página-->
-    <!--Aside: do lado de um artigo-->
-    <!--Aside: menu, formulário, etc-->
-    <aside>
-        <nav></nav>
-        <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam non a eum sapiente aperiam dolores?
-            Pariatur incidunt autem, obcaecati nihil suscipit dolores in? Ut in aperiam necessitatibus dolor, eligendi
-            ad!</section>
-    </aside>
-    <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sed vero soluta maiores, magnam
-        eveniet eius sapiente repellendus ipsam, neque quisquam atque dignissimos itaque provident dicta vel adipisci
-        facilis! Consectetur!</section>
+    <section>
+        <main></main>
+        <!--Aside: do lado da página-->
+        <!--Aside: do lado de um artigo-->
+        <!--Aside: menu, formulário, etc-->
+        <aside>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut architecto atque id quibusdam
+                quisquam
+                tenetur nesciunt sit provident, autem, voluptatum error voluptate laboriosam ducimus, illum enim harum
+                dolor
+                incidunt.
+            </p>
+        </aside>
+    </section>
     <footer></footer>
 </body>
 
