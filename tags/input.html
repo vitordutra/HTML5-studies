@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tag form e input</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" />
+      <!--name="option[]": array de opções para ser recuperado no servidor -> melhor para separar cada um dos dados-->
+      <input type="checkbox" name="option" value="1" />
+      <input type="checkbox" name="option" value="2" checked />
+      <!--só pode-se marcar um radio por grupo, depois que um for apertado não pode desmarcar-->
+      <!--Sexo M ou F-->
+      <!--Grupos são identificados pelo atributo name -->
+      <!-- value: o campo é enviado ao servidor com o valor selecionado-->
+      <input type="radio" name="gender" checked value="M" />
+      <input type="radio" name="gender" value="F" />
+      <input type="color" />
+      <input type="color" value="#FF0000" />
+      <input type="date" />
+      <input type="datetime-local" />
+      <input type="email" />
+      <input type="submit" value="OK" />
+      <input type="file" accept="image/png" multiple />
+      <input type="hidden" name="id" value="999" />
+      <input type="month" />
+      <input type="number" step="2" />
+      <input type="password" />
+      <input type="reset" />
+      <!--button não faz nada: geralmente configura-se um evento javascript-->
+      <input type="button" value="Salvar" />
+      <input type="search" />
+      <!--Em celulares abre o teclado numérico-->
+      <input type="tel" />
+      <input type="time" />
+      <input type="url" />
+      <input type="week" />
+      <input type="range" min="0" max="100" value="50" />
+    </form>
+  </body>
+</html>
